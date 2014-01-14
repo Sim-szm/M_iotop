@@ -6,6 +6,7 @@
 # mainly value is the 'pgpgin' and 'pgpgout' from vmstat_file 
 # since the last boot ! it can get the amount of data 
 # read from/write into the hard disk physical memory per second .
+# We can get the I/O speed fo hard disk !
 class vmstat_read(object):
 	def __init__(self):
 		self.source_file=open('/proc/vmstat')
